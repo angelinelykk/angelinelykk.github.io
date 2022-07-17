@@ -21,7 +21,11 @@ body {
   }
   h1 {
     z-index: 0;
-    top:0;
+    top: 10%;
+    left: 10%;
+    font-size: 100px;
     position: absolute;
     text-align: center;
+    color: wheat;
+    font-family:cursive;
   }
