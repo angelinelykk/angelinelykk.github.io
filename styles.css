@@ -67,3 +67,25 @@ body {
     letter-spacing: 15px;
 
   }
+.update {
+    z-index: 0;
+    top: 50%;
+    left: 5%;
+    font-size: 100px;
+    position: absolute;
+    text-align: center;
+    color: wheat;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 15px;
+}
+.github {
+    z-index: 0;
+    top: 60%;
+    left: 5%;
+    font-size: 100px;
+    position: absolute;
+    text-align: center;
+    color: wheat;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 15px;
+}
