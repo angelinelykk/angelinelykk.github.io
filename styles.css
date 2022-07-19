@@ -20,16 +20,14 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  top: 0;
   left: 0;
-  z-index: -3;
   position: relative;
 }
 .intro_container {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  z-index: -2;
+  z-index: 1;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -91,21 +89,29 @@ body {
   position: absolute;
   display: none;
 }
-.update {
-    z-index: 0;
-    top: 50%;
-    left: 5%;
-    font-size: 100px;
-    position: absolute;
-    text-align: center;
-    color: wheat;
-    font-family: "Poppins", sans-serif;
-    letter-spacing: 15px;
+#updates {
+  z-index: 1;
+  font-size: 25px;
+  position: relative;
+  color: #F4F3EE;
+  opacity: 1;
+  font-family: "League Spartan", serif;
 }
 #github {
-    z-index: 0;
+    z-index: 1;
     position: relative;
-    top: 50px;
+    top: 15px;
+    left: 10px;
+}
+.links{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 9999;
+}
+a{
+  z-index: 9999;
+  position: relative;
 }
 @keyframes ani1 {
   100% {
