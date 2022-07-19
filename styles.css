@@ -1,69 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400&display=swap");
 * {
-    box-sizing: border-box
+  box-sizing: border-box;
 }
 body {
-    margin: 0;
-    padding: 0;
-    cursor: url(images/girl.png), auto;
-}
-#cursor0 {
-  border-radius: 50%;
-  position: absolute;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-out;
-
-}
-#cursor1 {
-  border-radius: 50%;
-  position: absolute;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-out;
-
-
-}
-#cursor2 {
-  border-radius: 50%;
-  position: absolute;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-out;
-
-
+  margin: 0;
+  padding: 0;
+  cursor: url(images/girl.png), auto;
 }
 .parallax {
-    /* The image used */
-    background-image: url("images/background.jpeg");
-    /* Set a specific height */
-    min-height: 2000px;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-
-  .name {
-    z-index: 0;
-    top: 30%;
-    left: 5%;
-    font-size: 100px;
-    position: absolute;
-    color: wheat;
-    font-family: "Poppins", sans-serif;
-    letter-spacing: 15px;
-  }
-  .small_intro {
-    z-index: 0;
-    top: 10%;
-    left: 5%;
-    font-size: 100px;
-    position: absolute;
-    text-align: center;
-    color: wheat;
-    font-family: "Poppins", sans-serif;
-    letter-spacing: 15px;
-
-  }
+  /* The image used */
+  background-image: url("images/background.jpeg");
+  /* Set a specific height */
+  min-height:2000px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.name {
+  z-index: 0;
+  top: 30%;
+  left: 5%;
+  font-size: 100px;
+  position: absolute;
+  color: wheat;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 15px;
+}
+.small_intro {
+  z-index: 0;
+  top: 10%;
+  left: 5%;
+  font-size: 100px;
+  position: absolute;
+  text-align: center;
+  color: wheat;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 15px;
+}
