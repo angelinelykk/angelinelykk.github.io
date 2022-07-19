@@ -21,19 +21,23 @@ body {
   background-size: cover;
   left: 0;
   position: relative;
+  z-index: -1
 }
 .intro_container {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  z-index: 1;
-  text-align: center;
+  z-index: 0;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
 }
 #circle {
   background-color: #463F3A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 80vw;
   max-width: 80vh;
   height: 80vw;
@@ -41,30 +45,30 @@ body {
   position: relative;
   border-radius: 50%;
   opacity: 0.8;
-  justify-content:center;
-  z-index: -1;
-  align-self: center;
+  z-index: 1;
 }
 #name {
-  z-index: 0;
-  font-size: 70px;
+  z-index: 2;
+  font-size: 10vw;
   position: relative;
   color: #F4F3EE;
   font-family: "Playfair Display", serif;
-  letter-spacing: 12px;
-  top: 25%;
-  left: 2%;
+  letter-spacing: 1vw;
   opacity: 0;
   animation: ani1 1s ease-out forwards;
+  padding:0;
+  margin: 0;
+  text-align: center;
 }
 #small_intro {
-  top: 30%;
-  z-index: 0;
-  font-size: 25px;
+  margin: 0;
+  z-index: 2;
+  font-size: 5vw;
   position: relative;
   color: #F4F3EE;
   opacity: 1;
   font-family: "League Spartan", serif;
+  text-align: center;
 }
 #butterfly {
   height: 10%;
