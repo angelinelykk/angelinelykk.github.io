@@ -5,7 +5,7 @@
 body {
   margin: 0;
   padding: 0;
-  /* cursor: url(images/girl.png), auto; */
+  cursor: url(images/girl.png), auto; 
 }
 .parallax {
   /* The image used */
@@ -80,14 +80,17 @@ body {
 #cursor0 {
   position: absolute;
   display: none;
+  z-index: 1;
 }
 #cursor1 {
   position: absolute;
   display: none;
+  z-index: 1;
 }
 #cursor2 {
   position: absolute;
   display: none;
+  z-index: 1;
 }
 #updates {
   z-index: 1;
