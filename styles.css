@@ -11,7 +11,6 @@ body {
   /* The image used */
   background-image: url("images/background.jpeg");
   /* Set a specific height */
-  min-width: 100vh;
   width: 100vw;
   min-height: 10000px;
   height: 100vh;
@@ -56,7 +55,7 @@ body {
   top: 25%;
   left: 2%;
   opacity: 0;
-  animation: ani1 3s ease-out forwards;
+  animation: ani1 1s ease-out forwards;
 }
 #small_intro {
   top: 30%;
