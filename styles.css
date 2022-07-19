@@ -11,7 +11,9 @@ body {
   /* The image used */
   background-image: url("images/background.jpeg");
   /* Set a specific height */
-  min-height:2000px;
+  width: 100vw;
+  min-height: 10000px;
+  height: 100vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -41,4 +43,48 @@ body {
   color: wheat;
   font-family: "Poppins", sans-serif;
   letter-spacing: 15px;
+}
+  .name {
+    z-index: 0;
+    top: 6000px;
+    left: 5%;
+    font-size: 100px;
+    position: absolute;
+    color: wheat;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 15px;
+  }
+  .small_intro {
+    z-index: 0;
+    top: 10%;
+    left: 5%;
+    font-size: 100px;
+    position: absolute;
+    text-align: center;
+    color: wheat;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 15px;
+
+  }
+.update {
+    z-index: 0;
+    top: 50%;
+    left: 5%;
+    font-size: 100px;
+    position: absolute;
+    text-align: center;
+    color: wheat;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 15px;
+}
+.github {
+    z-index: 0;
+    top: 60%;
+    left: 5%;
+    font-size: 100px;
+    position: absolute;
+    text-align: center;
+    color: wheat;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 15px;
 }

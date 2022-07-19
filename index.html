@@ -5,18 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello World</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <div class="parallax">
-      <p class="small_intro">hi! i'm</p>
-      <h1 class="name">Angeline Lee</h1>
-      <button> About </button>
-      <button> Resume </button>
+    <p class="small_intro">hi! i'm</p>
+    <h1 class="name">Angeline Lee</h1>
+    <!-- <p class="update">updates in progress... for now, here is my Github </p>
+    <a class="github" href="https://github.com/angelinelykk" target="_blank">Github</a> -->
+    <p>attribution to narak0rn for the dumpling cursor
+        Freepik for the girl cursor
+    <!--cursor style-->
+    <img src="images/dumpling.png" alt="trailing dumpling" id="cursor0">
+    <img src="images/dumpling.png" alt="trailing dumpling1" id="cursor1">
+    <img src="images/dumpling.png" alt="trailing dumpling2" id="cursor2">
     </div>
-    <p>
-        attribution to narak0rn for the dumpling cursor Freepik for the girl
-        cursor
-      </p>
-  </body>
+    <script>
+        var cursor0 = document.getElementById("cursor0");
+        var cursor1 = document.getElementById("cursor1");
+        var cursor2 = document.getElementById("cursor2");
+        document.onmousemove = function (e) {
+            cursor0.style.left = (e.pageX+15) + "px";
+            cursor0.style.top = (e.pageY+15) + "px";
+            cursor1.style.left = (e.pageX+30) + "px";
+            cursor1.style.top = (e.pageY+15) + "px";
+            cursor2.style.left = (e.pageX+45) + "px";
+            cursor2.style.top = (e.pageY+15) + "px";
+        };
+    </script>
+</body>
 </html>
