@@ -12,28 +12,18 @@ body {
   background-image: url("images/background.jpeg");
   /* Set a specific height */
   width: 100vw;
-  min-height: 10000px;
   height: 100vh;
+  min-height: 10000px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  left: 0;
   position: relative;
-  z-index: -1
-}
-.intro_container {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  z-index: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  z-index: -1;
 }
 #circle {
-  background-color: #463F3A;
+  background-color: #F4F3EE;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,11 +41,11 @@ body {
   z-index: 2;
   font-size: 10vw;
   position: relative;
-  color: #F4F3EE;
+  color: #463F3A;
   font-family: "Playfair Display", serif;
   letter-spacing: 1vw;
   opacity: 0;
-  animation: ani1 1s ease-out forwards;
+  animation: ani1 3s ease-out forwards;
   padding:0;
   margin: 0;
   text-align: center;
@@ -65,7 +55,7 @@ body {
   z-index: 2;
   font-size: 5vw;
   position: relative;
-  color: #F4F3EE;
+  color: #463F3A;
   opacity: 1;
   font-family: "League Spartan", serif;
   text-align: center;
@@ -73,12 +63,26 @@ body {
 #butterfly {
   height: 10%;
   width: 10%;
-  top: 20%;
   left: 35%;
-  z-index: 1;
+  z-index: 2;
   position: relative;
-  opacity: 100%;
-  color: white;
+}
+.transition {
+  width: 100vw;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+.pawprints {
+  height: 10vh;
+  width: 10vh;
+  max-height: 10vw;
+  max-width: 10vw;
+
+  position: relative;
 }
 #cursor0 {
   position: absolute;
@@ -95,30 +99,20 @@ body {
   display: none;
   z-index: 1;
 }
-#updates {
-  z-index: 1;
-  font-size: 25px;
+
+.section {
+  width: 100vw;
+  height: 100vh;
   position: relative;
-  color: #F4F3EE;
-  opacity: 1;
-  font-family: "League Spartan", serif;
-}
-#github {
-    z-index: 1;
-    position: relative;
-    top: 15px;
-    left: 10px;
-}
-.links{
+  z-index: 0;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  z-index: 9999;
+  align-items: center;
+  flex-direction: column;
 }
-a{
-  z-index: 9999;
-  position: relative;
-}
+
+
+
 @keyframes ani1 {
   100% {
     opacity: 1;
