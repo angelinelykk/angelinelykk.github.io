@@ -5,7 +5,7 @@
 body {
   margin: 0;
   padding: 0;
-  cursor: url(images/girl.png), auto;
+  /* cursor: url(images/girl.png), auto; */
 }
 .parallax {
   /* The image used */
@@ -43,7 +43,7 @@ body {
   max-height: 80vh;
   position: relative;
   border-radius: 50%;
-  opacity: 75%;
+  opacity: 0.8;
   justify-content:center;
   z-index: -1;
   align-self: center;
@@ -57,7 +57,8 @@ body {
   letter-spacing: 12px;
   top: 25%;
   left: 2%;
-  animation: ani1 0.75s ease-out 4s forwards;
+  opacity: 0;
+  animation: ani1 3s ease-out forwards;
 }
 #small_intro {
   top: 30%;
@@ -65,6 +66,7 @@ body {
   font-size: 25px;
   position: relative;
   color: #F4F3EE;
+  opacity: 1;
   font-family: "League Spartan", serif;
 }
 #butterfly {
@@ -100,14 +102,13 @@ body {
     font-family: "Poppins", sans-serif;
     letter-spacing: 15px;
 }
-.github {
+#github {
     z-index: 0;
-    top: 60%;
-    left: 5%;
-    font-size: 100px;
-    position: absolute;
-    text-align: center;
-    color: wheat;
-    font-family: "Poppins", sans-serif;
-    letter-spacing: 15px;
+    position: relative;
+    top: 50px;
+}
+@keyframes ani1 {
+  100% {
+    opacity: 1;
+  }
 }
