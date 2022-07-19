@@ -18,8 +18,7 @@
     <!--cursor style-->
     <img src="images/dumpling.png" alt="trailing dumpling" id="cursor0">
     <img src="images/dumpling.png" alt="trailing dumpling1" id="cursor1">
-    <img src="images/dumpling.png" alt="trailing dumpling2" id="cursor2">
-    </div>
+    <img src="images/dumpling.png" alt="trailing dumpling2" id="cursor2"> 
     <script>
         var cursor0 = document.getElementById("cursor0");
         var cursor1 = document.getElementById("cursor1");
@@ -31,7 +30,11 @@
             cursor1.style.top = (e.pageY+15) + "px";
             cursor2.style.left = (e.pageX+45) + "px";
             cursor2.style.top = (e.pageY+15) + "px";
+            cursor0.style.display="block";
+            cursor1.style.display="block";
+            cursor2.style.display="block";
         };
     </script>
+    </div>
 </body>
 </html>
