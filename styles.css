@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Playfair+Display:ital@1&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -22,50 +22,60 @@ body {
   background-size: cover;
   top: 0;
   left: 0;
+  z-index: -3;
+  position: relative;
+}
+.intro_container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -2;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#circle {
+  background-color: #463F3A;
+  width: 80vw;
+  max-width: 80vh;
+  height: 80vw;
+  max-height: 80vh;
+  position: relative;
+  border-radius: 50%;
+  opacity: 75%;
+  justify-content:center;
   z-index: -1;
+  align-self: center;
 }
-.name {
+#name {
   z-index: 0;
+  font-size: 70px;
+  position: relative;
+  color: #F4F3EE;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 12px;
+  top: 25%;
+  left: 2%;
+  animation: ani1 0.75s ease-out 4s forwards;
+}
+#small_intro {
   top: 30%;
-  left: 5%;
-  font-size: 100px;
-  position: absolute;
-  color: wheat;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 15px;
-}
-.small_intro {
   z-index: 0;
-  top: 10%;
-  left: 5%;
-  font-size: 100px;
-  position: absolute;
-  text-align: center;
-  color: wheat;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 15px;
+  font-size: 25px;
+  position: relative;
+  color: #F4F3EE;
+  font-family: "League Spartan", serif;
 }
-.name {
-  z-index: 0;
-  top: 6000px;
-  left: 5%;
-  font-size: 100px;
-  position: absolute;
-  color: wheat;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 15px;
-}
-.small_intro {
-  z-index: 0;
-  top: 10%;
-  left: 5%;
-  font-size: 100px;
-  position: absolute;
-  text-align: center;
-  color: wheat;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 15px;
-
+#butterfly {
+  height: 10%;
+  width: 10%;
+  top: 20%;
+  left: 35%;
+  z-index: 1;
+  position: relative;
+  opacity: 100%;
+  color: white;
 }
 #cursor0 {
   position: absolute;
