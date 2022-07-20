@@ -23,49 +23,82 @@ body {
   z-index: -1;
 }
 #circle {
-  background-color: #F4F3EE;
+  background-color: #463F3A;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80vw;
-  max-width: 80vh;
-  height: 80vw;
-  max-height: 80vh;
+  width: 1vh;
+  max-width: 1vw;
+  height: 1vh;
+  max-height: 1vw;
   position: relative;
   border-radius: 50%;
-  opacity: 0.8;
+  opacity: 1;
   z-index: 1;
 }
 #name {
   z-index: 2;
-  font-size: 10vw;
+  font-size: min(5vw, 5vh);
   position: relative;
   color: #463F3A;
   font-family: "Playfair Display", serif;
   letter-spacing: 1vw;
-  opacity: 0;
-  animation: ani1 3s ease-out forwards;
+  opacity: 1;
   padding:0;
   margin: 0;
   text-align: center;
+  text-shadow: -5px 0px 5px #F4F3EE;
 }
 #small_intro {
   margin: 0;
+  padding:0;
+  margin: 0;
+  text-align: center;
   z-index: 2;
-  font-size: 5vw;
+  font-size: min(3vw, 3vh);
   position: relative;
   color: #463F3A;
   opacity: 1;
   font-family: "League Spartan", serif;
   text-align: center;
 }
+#intro {
+  bottom: 25vh;
+  position: absolute;
+  height: 10vh;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+}
+#fill {
+  height: 100%;
+  width: 100%;
+  background-color: #F4F3EE;
+  opacity: 0.8;
+  z-index: 1;
+}
+#cover {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
 #butterfly {
-  height: 10%;
-  width: 10%;
-  left: 35%;
+  height: 10vw;
+  max-height: 10vh;
+  max-width: 10vh;
+  width: 10vw;
   z-index: 2;
   position: relative;
+  opacity: 0;
+  animation: ani2 3s ease-out forwards;
+  margin-top: 2%;
 }
 .transition {
   width: 100vw;
@@ -77,10 +110,10 @@ body {
   flex-direction: column;
 }
 .pawprints {
-  height: 10vh;
-  width: 10vh;
-  max-height: 10vw;
-  max-width: 10vw;
+  height: 10vw;
+  width: 10vw;
+  max-height: 10vh;
+  max-width: 10vh;
   position: relative;
 }
 #cursor0 {
@@ -115,5 +148,11 @@ body {
 @keyframes ani1 {
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes ani2 {
+  100% {
+    opacity: 0.7;
   }
 }
