@@ -92,12 +92,13 @@ body {
   display: flex;
   justify-content: flex-start;
   height: 50vw;
+  max-height: 100vh;
   position: relative;
 }
 
 #section_head {
   position: absolute;
-  top: 15vw;
+  top: 28%;
   left: 2vw;
   width: 25vw;
   height: 25vw;
