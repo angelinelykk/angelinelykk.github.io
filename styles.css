@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Playfair+Display:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&family=Playfair+Display:ital@1&display=swap");
+
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   padding: 0;
-  cursor: url(images/girl.png), auto; 
+  cursor: url(images/girl.png), auto;
 }
+
 .parallax {
   /* The image used */
   background-image: url("images/background.jpeg");
   /* Set a specific height */
   width: 100vw;
-  height: 100vh;
-  min-height: 10000px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -21,44 +22,30 @@ body {
   background-size: cover;
   position: relative;
   z-index: -1;
-}
-#circle {
-  background-color: #463F3A;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 1vh;
-  max-width: 1vw;
-  height: 1vh;
-  max-height: 1vw;
-  position: relative;
-  border-radius: 50%;
-  opacity: 1;
-  z-index: 1;
+  flex-direction: column;
 }
+
 #name {
-  z-index: 2;
   font-size: min(5vw, 5vh);
   position: relative;
-  color: #463F3A;
+  color: #463f3a;
   font-family: "Playfair Display", serif;
   letter-spacing: 1vw;
   opacity: 1;
-  padding:0;
+  padding: 0;
   margin: 0;
   text-align: center;
-  text-shadow: -5px 0px 5px #F4F3EE;
+  text-shadow: -5px 0px 5px #f4f3ee;
 }
 #small_intro {
   margin: 0;
-  padding:0;
-  margin: 0;
+  padding: 0;
   text-align: center;
-  z-index: 2;
   font-size: min(3vw, 3vh);
   position: relative;
-  color: #463F3A;
+  color: #463f3a;
   opacity: 1;
   font-family: "League Spartan", serif;
   text-align: center;
@@ -71,13 +58,142 @@ body {
   display: flex;
   justify-content: center;
 }
+
+#butterfly {
+  height: 10vw;
+  max-height: 10vh;
+  max-width: 10vh;
+  width: 10vw;
+  position: relative;
+  opacity: 0;
+  animation: ani2 3s ease-out forwards;
+  margin-top: 2%;
+}
+
+.circle {
+  background-color: #463f3a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+#dot {
+  width: 1vh;
+  max-width: 1vw;
+  height: 1vh;
+  max-height: 1vw;
+}
+
+#wrapper_bubbles {
+  width: 83vw;
+  display: flex;
+  justify-content: flex-start;
+  height: 50vw;
+  position: relative;
+}
+
+#section_head {
+  position: absolute;
+  top: 15vw;
+  left: 2vw;
+  width: 25vw;
+  height: 25vw;
+  background-color: #f4f3ee;
+  box-shadow: 10px 10px 10px #463f3a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#small_deco {
+  height: 10vw;
+  width: 10vw;
+  left: 2vw;
+  top: 10vw;
+  position: absolute;
+  background-color: #e0afa0;
+  box-shadow: 10px 10px 10px #463f3a;
+}
+
+#smaller_deco {
+  height: 3vw;
+  width: 3vw;
+  position: absolute;
+  top: 35vw;
+  margin-left: 0vw;
+  background-color: #bcb8b1;
+  box-shadow: 10px 10px 10px #463f3a;
+}
+
+.section_title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: min(3vw, 3vh);
+  position: relative;
+  color: #463f3a;
+  opacity: 1;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+
+.content {
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 5vw;
+}
+
+#box {
+  height: 15vw;
+  width: 50vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#box_filler {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f4f3ee;
+  opacity: 0.8;
+}
+
+.section {
+  margin-top: 0;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section_text {
+  position: relative;
+  color: #463f3a;
+  font-size: min(3vw, 3vh);
+  font-family: "League Spartan", serif;
+  text-align: left;
+  padding: 2vw;
+}
+
 #fill {
   height: 100%;
   width: 100%;
-  background-color: #F4F3EE;
+  background-color: white;
   opacity: 0.8;
-  z-index: 1;
 }
+
 #cover {
   position: absolute;
   top: 0;
@@ -87,19 +203,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  z-index: 2;
 }
-#butterfly {
-  height: 10vw;
-  max-height: 10vh;
-  max-width: 10vh;
-  width: 10vw;
-  z-index: 2;
-  position: relative;
-  opacity: 0;
-  animation: ani2 3s ease-out forwards;
-  margin-top: 2%;
-}
+
 .transition {
   width: 100vw;
   margin-top: 0;
@@ -109,41 +214,45 @@ body {
   position: relative;
   flex-direction: column;
 }
+
 .pawprints {
   height: 10vw;
   width: 10vw;
-  max-height: 10vh;
-  max-width: 10vh;
   position: relative;
 }
+
 #cursor0 {
   position: absolute;
   display: none;
-  z-index: 1;
 }
+
 #cursor1 {
   position: absolute;
   display: none;
-  z-index: 1;
 }
+
 #cursor2 {
   position: absolute;
   display: none;
-  z-index: 1;
 }
 
-.section {
-  width: 100vw;
-  height: 100vh;
+#m1 {
+  width: 45vw;
   position: relative;
-  z-index: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin-left: 5vw;
 }
 
+#m2 {
+  width: 45vw;
+  position: relative;
+  margin-right: 5vw;
+}
 
+#m3 {
+  width: 45vw;
+  position: relative;
+  margin-left: 5vw;
+}
 
 @keyframes ani1 {
   100% {
