@@ -21,10 +21,18 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  z-index: -1;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.nav_icon {
+  position: fixed;
+  height: min(6vh, 6vw);
+  width: min(6vh, 6vw);
+  top: 2vh;
+  right: min(2vh, 2vw);
+  z-index: 1000;
 }
 
 #name {
@@ -57,6 +65,7 @@ body {
   width: 80vw;
   display: flex;
   justify-content: center;
+  
 }
 
 #butterfly {
@@ -94,6 +103,7 @@ body {
   height: 50vw;
   max-height: 100vh;
   position: relative;
+  
 }
 
 #section_head {
@@ -361,18 +371,21 @@ body {
   width: 45vw;
   position: relative;
   margin-left: 5vw;
+  max-height: 100vh;
 }
 
 #m2 {
   width: 45vw;
   position: relative;
   margin-right: 5vw;
+  max-height: 100vh;
 }
 
 #m3 {
   width: 45vw;
   position: relative;
   margin-left: 5vw;
+  max-height: 100vh;
 }
 
 
