@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Angeline's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="animations.js"></script>
 </head>
 <body>
     <div class="parallax">
     <!-- parallex div -->
-
       <!-- intro div -->
       <div class="section" style="margin-top:0; height: 100vh;">
       <!-- intro div -->
@@ -136,32 +136,125 @@
         </div>
       </div>
 
-      <!-- Work/ Projects section -->
-      <div class="section" id="about me">
-        <div id="flex-view">
-          <div class="card">
-            <div id="box_filler"></div>
-            <p class="section_title"> BlackRock </p>
+      <!-- work section -->
+      <div class="section" id="projects">
+        <div class="flip-card-container">
+          <div class="flip-card">
+            <div class="flip-card-front">
+              <p class="section_title" style="text-align: center; margin:0; padding:0;">Personal Website</p>
+              <p class="section_text" style="text-align: center; margin:0; padding:0;"> July 2022 - Present</p>
+            </div>
+            <div class="flip-card-back">
+              <p class="section_text" style="margin:0; color: #E0AFA0; align-self: center; text-align: center;">
+                Web Developer
+              </p>
+              <p class="section_text" style="margin:0;  color: #F4F3EE;">
+                Built a portfolio website hosted on GitHub Pages with a Studio Ghibli theme displaying more information about my work and personal apsirations
+              </p>
+              <p class="section_text" style="margin:0;  color: #F4F3EE;">
+                Incorporated animations such as a customized cursor and rotating card elements
+              </p>
+              <p class="section_text" style="margin:0; color: #F4F3EE;">
+                Implemented a parallax interface where the background remains still while other elements scroll by
+              </p>
+              <p class="section_text" style="margin:0; color: #F4F3EE;">
+                Created horizontal swiping navigation interface to achieve a smoother browsing experience reminiscent of flipping the actual pages of a portfolio booklet
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <div id="box_filler"></div>
-            <p class="section_title"> Mobile Developers@Berkeley </p>
+        </div>
+        <div class="flip-card-container">
+          <div class="flip-card">
+            <div class="flip-card-front">
+              <p class="section_title" style="text-align: center; margin:0; padding:0;">BlackRock</p>
+              <p class="section_text" style="text-align: center; margin:0; padding:0;">May 2022 - Present</p>
+            </div>
+            <div class="flip-card-back">
+              <p class="section_text" style="margin:0; color: #E0AFA0; align-self: center; text-align: center;">
+                Software Engineering & Product Management Intern
+              </p>
+              <p class="section_text" style="margin:0;  color: #F4F3EE;">
+                Mapped user journey and conducted competitive landscape research for mobile application
+              </p>
+              <p class="section_text" style="margin:0;  color: #F4F3EE;">
+                Proposed, designed on Figma and developed new feature for internal mobile application using React Native
+              </p>
+              <p class="section_text" style="margin:0; color: #F4F3EE;">
+                Implemented frontend updates to 4 screens and integrated internal APIs into another internal mobile application
+              </p>
+              <p class="section_text" style="margin:0; color: #F4F3EE;">
+                Completed 3 full-stack mobile applications supported by both iOS and Androi during training using React Native, REST APIs and Cloud Firestore
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <div id="box_filler"></div>
-            <p class="section_title"> Data Science Society </p>
+        </div>
+        <div class="flip-card-container">
+          <div class="flip-card">
+            <div class="flip-card-front">
+              <p class="section_title" style="text-align: center; margin:0; padding:0;">Mobile Developers at Berkeley</p>
+              <p class="section_text" style="text-align: center; margin:0; padding:0;">August 2021 - Present</p>
+            </div>
+            <div class="flip-card-back">
+              <p class="section_text" style="margin:0; color: #E0AFA0; align-self: center; text-align: center;">
+                iOS App Developer
+              </p>
+              <p class="section_text" style="margin:0;  color: #F4F3EE;">
+                Incorporated In-App Purchases using Apples's In-App Purchase API as well as Apple Pay and traditional credit card payments for non-digital services using the Stripe API 
+              </p>
+              <p class="section_text" style="margin:0;  color: #F4F3EE;">
+                Updated existing user interface with Figma designs from client's product team
+              </p>
+              <p class="section_text" style="margin:0; color: #F4F3EE;">
+                Built 3 iOS full-stack mobile applications in the training program using Auto Layout in Swift and UIKit for frontend development and incorporated Firebase Authentication and Cloud Firestore for backend storage and integration
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <div id="box_filler"></div>
-            <p class="section_title"> Personal Website </p>
+        </div>
+        <div class="flip-card-container">
+          <div class="flip-card">
+            <div class="flip-card-front">
+              <p class="section_title" style="text-align: center; margin:0; padding:0;">Data Science Society</p>
+              <p class="section_text" style="text-align: center; margin:0; padding:0;">August 2020 - Present</p>
+            </div>
+            <div class="flip-card-back">
+              <p class="section_text" style="margin:0; color: #E0AFA0; align-self: center; text-align: center;">
+                Vice President of Marketing, Director of Academic Development Committee
+              </p>
+              <p class="section_text" style="margin:0;  color: #F4F3EE;">
+                Revamped organizational branding and marketing materials including its consulting booklet introducing its services to clients and recruitment social media posts
+              </p>
+              <p class="section_text" style="margin:0;  color: #F4F3EE;">
+                Mentored 4 teams of undergraduate students in machine learning and data visualization projects and trained them in the usage of pandas, scikit-learn, Matplotlib and Seaborn
+              </p>
+              <p class="section_text" style="margin:0; color: #F4F3EE;">
+                Directed a programming workshop for over 80 middle school students together with the Society of Women Engineers
+              </p>
+              <p class="section_text" style="margin:0; color: #F4F3EE;">
+                Wrote an article "Personality in Four Letters or Less" on a personal group data science project featuring the entire life cycle from data cleaning using pandas, visualizations using Seaborn, a Random Forest Classifer to predict MBTI types of users based on their online activity with over 90% accuracy in each category using scikit-learn
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <div id="box_filler"></div>
-            <p class="section_title"> Enterprise Singapore </p>
-          </div>
-          <div class="card">
-            <div id="box_filler"></div>
-            <p class="section_title"> Finance </p>
+        </div>
+        <div class="flip-card-container">
+          <div class="flip-card">
+            <div class="flip-card-front">
+              <p class="section_title" style="text-align: center; margin:0; padding:0;">Enterprise Singapore</p>
+              <p class="section_text" style="text-align: center; margin:0; padding:0;">May 2020 - August 2020</p>
+            </div>
+            <div class="flip-card-back">
+              <p class="section_text" style="margin:0; color: #E0AFA0; align-self: center; text-align: center;">
+                Info-comm, Media & Digitalization Intern
+              </p>
+              <p class="section_text" style="margin:0;  color: #F4F3EE;">
+                Reduced compilation time of a database with 15,000+ companies by 30% through building a web-scraping program extractin information from LinkedIn and other websites using SQL, Selenium and Beautiful Soup
+              </p>
+              <p class="section_text" style="margin:0;  color: #F4F3EE;">
+                Presented about fundamental quantum physics concepts such as Superposition and Entanglement, potential applications, state of technology and current gaps in existing initiatives to develop the local Quantum Computing ecosystem
+              </p>
+              <p class="section_text" style="margin:0; color: #F4F3EE;">
+                Consulted 12 rising Artificial Intelligence start-ups to discuss business recovery strategies
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -392,10 +485,10 @@
     <img src="images/dumpling.png" alt="trailing dumpling1" id="cursor1">
     <img src="images/dumpling.png" alt="trailing dumpling2" id="cursor2"> 
     <script>
-        var cursor0 = document.getElementById("cursor0");
-        var cursor1 = document.getElementById("cursor1");
-        var cursor2 = document.getElementById("cursor2");
-        document.onmousemove = function (e) {
+      var cursor0 = document.getElementById("cursor0");
+      var cursor1 = document.getElementById("cursor1");
+      var cursor2 = document.getElementById("cursor2");
+      document.onmousemove= function(e) {
           cursor0.style.left = (e.pageX+15) + "px";
           cursor0.style.top = (e.pageY+15) + "px";
           cursor1.style.left = (e.pageX+30) + "px";
@@ -405,12 +498,13 @@
           cursor0.style.display="block";
           cursor1.style.display="block";
           cursor2.style.display="block";
-        };
-        document.onscroll = function () {
+      };
+      document.onscroll = function () {
           cursor0.style.display="none";
           cursor1.style.display="none";
           cursor2.style.display="none";
-        }
+      }
     </script>
-</body>
+  </body>
+
 </html>
