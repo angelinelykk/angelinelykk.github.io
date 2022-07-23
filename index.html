@@ -1,512 +1,1006 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Angeline's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="animations.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="final_styles.css">
 </head>
 <body>
-    <div class="parallax">
-    <!-- parallex div -->
-      <!-- intro div -->
-      <div class="section" style="margin-top:0; height: 100vh;">
-      <!-- intro div -->
-        <a href="https://github.com/angelinelykk" target="_blank">
-          <img src="./images/github.png" alt="github" class="nav_icon" style="right: min(4vh, 4vw);">
-        </a>
-        <a href="https://www.linkedin.com/in/angelineleeyingkee/" target="_blank" >
-          <img src="./images/linkedin.png" alt="linkedin" class="nav_icon" style="right: min(12vh, 12vw);">
-        </a>
-        <a href="https://www.instagram.com/angeline.lyk/?hl=en" target="_blank">
-          <img src="./images/instagram.png" alt="instagram" class="nav_icon" style="right: min(20vh, 20vw);">
-        </a>
-        <a href="https://www.tiktok.com/@angeline.lyk" target="_blank">
-          <img src="./images/tiktok.png" alt="tiktok" class="nav_icon" style="right: min(28vh, 28vw);">
-        </a>
+    <div class="pages">
 
-        <h1 id="name">Angeline Lee</h1>
-        <img id='butterfly' src="./images/butterfly.png" alt="butterfly">
-        <div id="intro">
-          <div id="fill"></div>
-          <div id="cover" style="background-color:#F4F3EE; opacity: 0.8; width: 100%; padding-left: 10vw; padding-right: 10vw;">
-            <p id="small_intro">About Me</p>
-            <div class="circle" id="dot"></div>
-            <p id="small_intro">My Projects</p>
-            <div class="circle" id="dot"></div>
-            <p id="small_intro">My Skills</p>
-          </div>   
-        </div>
-      </div>
-
-      <!-- pawprint div -->
-      <div class="transition">
-        <img class="pawprints" src="./images/pawprints.png" id="p1" style="margin-right:0vw">
-        <img class="pawprints" src="./images/pawprints.png" id="p2" style="margin-right:20vw">
-        <img class="pawprints" src="./images/pawprints.png" id="p3" style="margin-right:35vw">
-      </div>
-
-      <!-- section divider -->
-      <div id="wrapper_bubbles">
-        <div class="circle" id="small_deco"></div>
-        <div class="circle" id="smaller_deco"></div>
-        <div class="circle" id="section_head">
-          <h1 class="section_title">welcome.</h1>
-        </div>
-      </div>
-
-      <!-- about me section -->
-      <div class="section" id="about me" style="justify-content: flex-start;">
-        <div class="content">
-          <div id="box">
-            <div id="box_filler"></div>
-            <p class="section_text">Nice to meet you! I'm Angeline, a rising junior at the University of California, Berkeley. </p>
-          </div>
-          <img src="./images/m1.jpg" alt="me1" id="m1">
-        </div>
-
-        <div class="content">
-          <img src="./images/majors.jpg" alt="majors" id="m2">
-          <div id="box">
-            <div id="box_filler"></div>
-            <p class="section_text">My majors are Computer Science and Statistics alongside my minor, Data Science.</p>
-          </div>
+        <!-- page 1 -->
+        <div class="page" id="p1">
+            <!-- navigation bar -->
+            <div 
+            class="bar" 
+            id="b1"
+            >
+                Cover
+            </div>
+            <!-- page content -->
+            <div class="page-content" style="
+            opacity: 1;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            " 
+            id="c1">
+                <!-- navigation container -->
+                <div class="nav-container">
+                    <a href="https://github.com/angelinelykk" target="_blank">
+                        <img 
+                            src="./images/github.png" 
+                            alt="github" 
+                            class="nav-icon" 
+                            >
+                    </a>
+                    <a href="https://www.linkedin.com/in/angelineleeyingkee/" target="_blank">
+                        <img 
+                            src="./images/linkedin.png" 
+                            alt="linkedin" 
+                            class="nav-icon" 
+                            >
+                    </a>
+                    <a href="https://www.instagram.com/angeline.lyk/?hl=en" target="_blank">
+                        <img 
+                            src="./images/instagram.png" 
+                            alt="instagram" 
+                            class="nav-icon" 
+                            >
+                    </a>
+                    <a href="https://www.tiktok.com/@angeline.lyk" target="_blank">
+                        <img 
+                            src="./images/tiktok.png" 
+                            alt="tiktok" 
+                            class="nav-icon" 
+                            >
+                    </a>
+                </div>
+                <!-- name -->
+                <h1 id="name">Angeline Lee</h1>
+                <!-- butterfly -->
+                <img id='butterfly' src="./images/butterfly.png" alt="butterfly">
+                <!-- short intro -->
+                <div id="short-intro">
+                    <p class="text-dark">presenting a short introduction of myself.</p>
+                    <div class="filler"></div>   
+                </div>
+            </div>
         </div>
 
-        <div class="content">
-          <div id="box" style="height: 40vw">
-            <div id="box_filler"></div>
-            <p class="section_text">As an aspiring software engineer, I constantly seek learning opportunities in latest technologies and actively try to expand my skillset! 
-              So far, I've enjoyed the following areas listed on the right. </p>
-          </div>
-          <div id="box" style="height: 40vw; flex-direction: column; justify-content: space-between; margin-left: 10vw">
-            <div id="interest">
-              <div id="box_filler"></div>
+        <!-- page 2 -->
+        <div class="page" id='p2' style="background-color:yellow">
             
-              <img class="icons" src="./images/smartphone.png" alt="phone">
-              <p class="section_text" style="font-size: min(2.5vw, 2.5vh); padding:0; margin-left: 2vw;">Mobile App Development </p>
-              
+            <!-- navigation bar -->
+            <div 
+            class="bar" 
+            id="b2"
+            style="height: auto;"
+            >
+                About Me
             </div>
-            <div id="interest">
-              <div id="box_filler"></div>
-              <img class="icons" src="./images/web-programming.png" alt="web">
-              <p class="section_text" style="font-size: min(2.5vw, 2.5vh); padding:0; margin-left: 2vw;">Web Development </p>
+
+            <!-- page content -->
+            <div class="page-content" id="c2" style="
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            ">
+                <!-- navigation container -->
+                <div class="nav-container">
+                    <a href="https://github.com/angelinelykk" target="_blank">
+                        <img 
+                            src="./images/github.png" 
+                            alt="github" 
+                            class="nav-icon" 
+                            >
+                    </a>
+                    <a href="https://www.linkedin.com/in/angelineleeyingkee/" target="_blank">
+                        <img 
+                            src="./images/linkedin.png" 
+                            alt="linkedin" 
+                            class="nav-icon" 
+                            >
+                    </a>
+                    <a href="https://www.instagram.com/angeline.lyk/?hl=en" target="_blank">
+                        <img 
+                            src="./images/instagram.png" 
+                            alt="instagram" 
+                            class="nav-icon" 
+                            >
+                    </a>
+                    <a href="https://www.tiktok.com/@angeline.lyk" target="_blank">
+                        <img 
+                            src="./images/tiktok.png" 
+                            alt="tiktok" 
+                            class="nav-icon" 
+                            >
+                    </a>
+                </div>
+                <!-- header -->
+                <div class="header">
+                    <div class="circle" style="
+                    height: min(15vh,15vw); ; 
+                    width: min(15vh,15vw); ;
+                    background-color: #e0afa0;
+                    box-shadow: 10px 10px 10px #463f3a;
+                    margin-left: min(40vh,40vw); ;
+                    position: absolute;
+                    top: min(2vh,2vw); ;
+                    "
+                    ></div>
+                    <div class="circle" style="
+                    height: min(5vh,5vw); 
+                    width: min(5vh,5vw); 
+                    background-color: #bcb8b1;
+                    box-shadow: 10px 10px 10px #463f3a;
+                    position: absolute;
+                    margin-right: min(40vh,40vw); ;
+                    bottom: min(2vh,2vw); 
+                    "
+                    ></div>
+                    <div class="circle" style="
+                    height: min(30vh,30vw); 
+                    width: min(30vh,30vw); 
+                    background-color: #f4f3ee;
+                    box-shadow: 10px 10px 10px #463f3a;
+                    z-index: 999;
+                    "
+                    >
+                    <p class="section-title">welcome.</p>
+                    </div>
+                </div>
+
+                <!-- intro divs -->
+                <div class="content">
+                    <img src="./images/m1.jpg" alt="me1" id="m1">
+                    <div class="text-box">
+                        <div class="filler"></div>
+                        <p class="text-dark">Nice to meet you! I'm Angeline, a rising junior at the University of California, Berkeley. </p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="text-box">
+                        <div class="filler"></div>
+                        <p class="text-dark">My majors are Computer Science and Statistics alongside my minor, Data Science. </p>
+                    </div>
+                    <img src="./images/majors.jpg" alt="majors" id="m2">
+                </div>
+
+                <div class="content">
+                    <div class="text-box" style="width: 42vw; margin-right: 3vw;">
+                        <div class="filler"></div>
+                        <p class="text-dark">
+                            As an aspiring software engineer, I constantly seek learning opportunities in latest technologies and actively try to expand my skillset! 
+                        So far, I've enjoyed the following areas listed on the right.
+                        </p>
+                    </div>
+                    <div class="text-box" style="
+                        height: 100%;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        ">
+                        <div class="text-box" style="height: 30%; align-items: center; justify-content: center;">
+                            <div class="filler"></div>
+                            <img class="icons" src="./images/smartphone.png" alt="phone">
+                            <p class="text-dark">Mobile App Development</p>
+                        </div>
+                        <div class="text-box" style="height: 30%; align-items: center; justify-content: center;">
+                            <div class="filler"></div>
+                            <img class="icons" src="./images/web-programming.png" alt="web">
+                            <p class="text-dark">Web Development</p>
+                        </div>
+                        <div class="text-box" style="height: 30%; align-items: center; justify-content: center;">
+                            <div class="filler"></div>
+                            <img class="icons" src="./images/data-science.png" alt="data" style="margin-left: 5%">
+                            <p class="text-dark">Data Science</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="text-box">
+                        <div class="filler"></div>
+                        <p class="text-dark">
+                            Beyond these, I also have a growing interest in Finance. Recently, I've been taking a course on Options and reading Thinking in Bets by Annie Duke.
+                        </p>
+                    </div>
+                    <img src="./images/book.jpeg" alt="book" id="m2">
+                </div>
+
+                <div class="content">
+                    <img src="./images/art.jpg" alt="art" id="m1">
+                    <div class="text-box">
+                        <div class="filler"></div>
+                        <p class="text-dark">
+                            Outside of work, I am passionate about dance and enjoy drawing/ painting.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content" style="margin-bottom: 5vh">
+                    <div class="text-box">
+                        <div class="filler"></div>
+                        <p class="text-dark">
+                            Check out the other pages to learn more about me!
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div id="interest">
-              <div id="box_filler"></div>
-              <img class="icons" src="./images/data-science.png" alt="data">
-              <p class="section_text" style="font-size: min(2.5vw, 2.5vh); padding:0; margin-left: 2vw;">Data Science </p>
-            </div>
-          </div>
+
+
         </div>
 
-        <div class="content">
-          <img src="./images/book.jpeg" alt="book" id="m2"> 
-          <div id="box" style="height: 40vw">
-            <div id="box_filler"></div>
-            <p class="section_text">Beyond these, I also have a growing interest in Finance. Recently, I've been taking a course on Options and reading Thinking in Bets by Annie Duke. </p>
-          </div>
-        </div>
-      
-        <div class="content">
-          <div id="box">
-            <div id="box_filler"></div>
-            <p class="section_text">
-              Outside of work, I am passionate about dance and enjoy drawing/ painting.
-            </p>
-          </div>
-          <img src="./images/art.jpg" alt="art" id="m3">
+        <!-- page 3 -->
+        <div class="page" id='p3'>
+            
+            <!-- navigation bar -->
+            <div 
+            class="bar" 
+            id="b3"
+            style="height: auto;"
+            >
+                Work Experience & Projects
+            </div>
+
+            <!-- page content -->
+            <div class="page-content" id="c3" 
+            style="flex-direction: column;
+            align-items: center;
+            justify-content: center">
+                <!-- header -->
+                <div class="header">
+                    <div class="circle" style="
+                    height: min(15vh,15vw); ; 
+                    width: min(15vh,15vw); ;
+                    background-color: #e0afa0;
+                    box-shadow: 10px 10px 10px #463f3a;
+                    margin-left: min(40vh,40vw); ;
+                    position: absolute;
+                    top: min(2vh,2vw); ;
+                    "
+                    ></div>
+                    <div class="circle" style="
+                    height: min(5vh,5vw); 
+                    width: min(5vh,5vw); 
+                    background-color: #bcb8b1;
+                    box-shadow: 10px 10px 10px #463f3a;
+                    position: absolute;
+                    margin-right: min(40vh,40vw); ;
+                    bottom: min(2vh,2vw); 
+                    "
+                    ></div>
+                    <div class="circle" style="
+                    height: min(30vh,30vw); 
+                    width: min(30vh,30vw); 
+                    background-color: #f4f3ee;
+                    box-shadow: 10px 10px 10px #463f3a;
+                    z-index: 999;
+                    "
+                    >
+                    <p class="section-title">work experience & projects.</p>
+                    </div>
+                </div>
+                <!-- navigation container -->
+                <div class="nav-container">
+                    <a href="https://github.com/angelinelykk" target="_blank">
+                        <img 
+                            src="./images/github.png" 
+                            alt="github" 
+                            class="nav-icon" 
+                            >
+                    </a>
+                    <a href="https://www.linkedin.com/in/angelineleeyingkee/" target="_blank">
+                        <img 
+                            src="./images/linkedin.png" 
+                            alt="linkedin" 
+                            class="nav-icon" 
+                            >
+                    </a>
+                    <a href="https://www.instagram.com/angeline.lyk/?hl=en" target="_blank">
+                        <img 
+                            src="./images/instagram.png" 
+                            alt="instagram" 
+                            class="nav-icon" 
+                            >
+                    </a>
+                    <a href="https://www.tiktok.com/@angeline.lyk" target="_blank">
+                        <img 
+                            src="./images/tiktok.png" 
+                            alt="tiktok" 
+                            class="nav-icon" 
+                            >
+                    </a>
+                </div>
+                <div class="flip-card-container">
+                    <div class="flip-card">
+                      <div class="flip-card-front">
+                        <p class="section-title" style="text-align: center; margin:0; padding:0;">
+                            BlackRock
+                        </p>
+                        <p class="text-dark" style="text-align: center; margin:0; padding:0;"> 
+                            May 2022 - Present
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p class="text-dark" style="
+                            margin:0; color: #E0AFA0; 
+                            align-self: center; 
+                            text-align: center;
+                            margin-bottom: 2vh;">
+                            Software Engineering & Product Management Intern
+                        </p>
+                        <p class="text-dark" style="
+                        margin:0;  
+                        color: #F4F3EE;
+                        margin-bottom: 1vh;">
+                            Mapped user journey and conducted competitive landscape research for mobile application
+
+                        </p>
+                        <p class="text-dark" style="margin:0;  color: #F4F3EE;margin-bottom: 2vh;">
+                            Proposed, designed on Figma and developed new feature for internal mobile application using React Native
+                        </p>
+                        <p class="text-dark" style="margin:0; color: #F4F3EE;margin-bottom: 2vh;">
+                            Implemented frontend updates to 4 screens and integrated internal APIs into another internal mobile application
+                        </p>
+                        <p class="text-dark" style="margin:0; color: #F4F3EE;margin-bottom: 2vh;">
+                            Completed 3 full-stack mobile applications supported by both iOS and Androi during training using React Native, REST APIs and Cloud Firestore
+                        </p>
+                      </div>
+
+                    </div>
+                </div>
+
+                <div class="flip-card-container">
+                    <div class="flip-card">
+                      <div class="flip-card-front">
+                        <p class="section-title" style="text-align: center; margin:0; padding:0;">
+                            Mobile Developers at Berkeley
+                        </p>
+                        <p class="text-dark" style="text-align: center; margin:0; padding:0;"> 
+                            August 2021 - Present
+                        </p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p class="text-dark" style="
+                            margin:0; color: #E0AFA0; 
+                            align-self: center; 
+                            text-align: center;
+                            margin-bottom: 2vh;">
+                        iOS App Developer
+                        </p>
+                        <p class="text-dark" style="
+                        margin:0;  
+                        color: #F4F3EE;
+                        margin-bottom: 2vh;">
+                            Incorporated In-App Purchases using Apples's In-App Purchase API as well as Apple Pay and traditional credit card payments for non-digital services using the Stripe API 
+                        </p>
+                        <p class="text-dark" style="margin:0;  color: #F4F3EE;margin-bottom: 2vh;">
+                            Updated existing user interface with Figma designs from client's product team
+                        </p>
+                        <p class="text-dark" style="margin:0; color: #F4F3EE;margin-bottom: 2vh;">
+                            Built 3 iOS full-stack mobile applications in the training program using Auto Layout in Swift and UIKit for frontend development and incorporated Firebase Authentication and Cloud Firestore for backend storage and integration
+                        </p>
+                      </div>
+                      
+                    </div>
+                </div>
+
+                <div class="flip-card-container">
+                    <div class="flip-card">
+                      <div class="flip-card-front">
+                        <p class="section-title" style="text-align: center; margin:0; padding:0;">Data Science Society</p>
+                        <p class="text-dark" style="text-align: center; margin:0; padding:0;">August 2020 - Present</p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p class="text-dark" style="
+                            margin:0; color: #E0AFA0; 
+                            align-self: center; 
+                            text-align: center;
+                            margin-bottom: 2vh;">
+                            Vice President of Marketing, Director of Academic Development Committee
+                        </p>
+                        <p class="text-dark" style="
+                        margin:0;  
+                        color: #F4F3EE;
+                        margin-bottom: 1vh;">
+                            Revamped organizational branding and marketing materials including its consulting booklet introducing its services to clients and recruitment social media posts
+                        </p>
+                        <p class="text-dark" style="margin:0;  color: #F4F3EE;margin-bottom: 2vh;">
+                            Mentored 4 teams of undergraduate students in machine learning and data visualization projects and trained them in the usage of pandas, scikit-learn, Matplotlib and Seaborn
+                        </p>
+                        <p class="text-dark" style="margin:0; color: #F4F3EE;margin-bottom: 2vh;">
+                            Directed a programming workshop for over 80 middle school students together with the Society of Women Engineers
+                        </p>
+                        <p class="text-dark" style="margin:0; color: #F4F3EE;margin-bottom: 2vh;">
+                            Wrote an article named "Personality in Four Letters or Less" on a personal group data science project featuring the entire life cycle from data cleaning using pandas, visualizations using Seaborn, a Random Forest Classifer to predict MBTI types of users based on their online activity with over 90% accuracy in each category using scikit-learn
+                        </p>
+                      </div>
+                      
+                    </div>
+                </div>
+
+                <div class="flip-card-container">
+                    <div class="flip-card">
+                      <div class="flip-card-front">
+                        <p class="section-title" style="text-align: center; margin:0; padding:0;">Enterprise Singapore</p>
+                        <p class="text-dark" style="text-align: center; margin:0; padding:0;">May 2020 - August 2020</p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p class="text-dark" style="
+                            margin:0; color: #E0AFA0; 
+                            align-self: center; 
+                            text-align: center;
+                            margin-bottom: 2vh;">
+                            Info-comm, Media & Digitalization Intern
+                        </p>
+                        <p class="text-dark" style="
+                        margin:0;  
+                        color: #F4F3EE;
+                        margin-bottom: 1vh;">
+                            Reduced compilation time of a database with 15,000+ companies by 30% through building a web-scraping program extractin information from LinkedIn and other websites using SQL, Selenium and Beautiful Soup
+                        </p>
+                        <p class="text-dark" style="margin:0;  color: #F4F3EE;margin-bottom: 2vh;">
+                            Presented about fundamental quantum physics concepts such as Superposition and Entanglement, potential applications, state of technology and current gaps in existing initiatives to develop the local Quantum Computing ecosystem
+                        </p>
+                        <p class="text-dark" style="margin:0; color: #F4F3EE;margin-bottom: 2vh;">
+                            Consulted 12 rising Artificial Intelligence start-ups to discuss business recovery strategies
+                        </p>
+                      </div>          
+                    </div>
+                </div>
+
+                <div class="flip-card-container">
+                    <div class="flip-card">
+                      <div class="flip-card-front">
+                        <p class="section-title" style="text-align: center; margin:0; padding:0;">Personal Website</p>
+                        <p class="text-dark" style="text-align: center; margin:0; padding:0;"> July 2022 - Present</p>
+                      </div>
+                      <div class="flip-card-back">
+                        <p class="text-dark" style="
+                            margin:0; color: #E0AFA0; 
+                            align-self: center; 
+                            text-align: center;
+                            margin-bottom: 2vh;">
+                          Web Developer
+                        </p>
+                        <p class="text-dark" style="
+                        margin:0;  
+                        color: #F4F3EE;
+                        margin-bottom: 1vh;">
+                          Built a portfolio website hosted on GitHub Pages with a Studio Ghibli theme displaying more information about my work and personal apsirations
+                        </p>
+                        <p class="text-dark" style="margin:0;  color: #F4F3EE;margin-bottom: 2vh;">
+                          Incorporated animations such as a customized cursor and rotating card elements
+                        </p>
+                        <p class="text-dark" style="margin:0; color: #F4F3EE;margin-bottom: 2vh;">
+                          Implemented a parallax interface where the background remains still while other elements scroll by
+                        </p>
+                        <p class="text-dark" style="margin:0; color: #F4F3EE;margin-bottom: 2vh;">
+                          Created horizontal swiping navigation interface to achieve a smoother browsing experience reminiscent of flipping the actual pages of a portfolio booklet
+                        </p>
+                      </div>
+                      
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
-      </div>
+        <!-- page 4 -->
+        <div class="page" id='p4' style="background-color:blue">
+            
+            <!-- navigation bar -->
+            <div 
+            class="bar" 
+            id="b4"
+            style="height: auto;"
+            >
+                Skills & Classes
+            </div>
 
-      <!-- pawprint div -->
-      <div class="transition">
-        <img class="pawprints" src="./images/flipped_pawprints.png" id="p1" style="margin-right:0vw">
-        <img class="pawprints" src="./images/flipped_pawprints.png" id="p2" style="margin-right:-20vw">
-        <img class="pawprints" src="./images/flipped_pawprints.png" id="p3" style="margin-right:-35vw">
-      </div>
+            <!-- page content -->
+            <div class="page-content" id="c4" style="flex-direction: column;
+            align-items: center;
+            justify-content: center;">
 
-       <!-- section divider -->
-       <div id="wrapper_bubbles">
-        <div class="circle" id="flipped_small_deco"></div>
-        <div class="circle" id="flipped_smaller_deco"></div>
-        <div class="circle" id="flipped_section_head">
-          <h1 class="section_title">work experience & projects.</h1>
+            <!-- navigation container -->
+            <div class="nav-container">
+                <a href="https://github.com/angelinelykk" target="_blank">
+                    <img 
+                        src="./images/github.png" 
+                        alt="github" 
+                        class="nav-icon" 
+                        >
+                </a>
+                <a href="https://www.linkedin.com/in/angelineleeyingkee/" target="_blank">
+                    <img 
+                        src="./images/linkedin.png" 
+                        alt="linkedin" 
+                        class="nav-icon" 
+                        >
+                </a>
+                <a href="https://www.instagram.com/angeline.lyk/?hl=en" target="_blank">
+                    <img 
+                        src="./images/instagram.png" 
+                        alt="instagram" 
+                        class="nav-icon" 
+                        >
+                </a>
+                <a href="https://www.tiktok.com/@angeline.lyk" target="_blank">
+                    <img 
+                        src="./images/tiktok.png" 
+                        alt="tiktok" 
+                        class="nav-icon" 
+                        >
+                </a>
+            </div>
+            <!-- header -->
+            <div class="header">
+                <div class="circle" style="
+                height: min(15vh,15vw); ; 
+                width: min(15vh,15vw); ;
+                background-color: #e0afa0;
+                box-shadow: 10px 10px 10px #463f3a;
+                margin-left: min(40vh,40vw); ;
+                position: absolute;
+                top: min(2vh,2vw); ;
+                "
+                ></div>
+                <div class="circle" style="
+                height: min(5vh,5vw); 
+                width: min(5vh,5vw); 
+                background-color: #bcb8b1;
+                box-shadow: 10px 10px 10px #463f3a;
+                position: absolute;
+                margin-right: min(40vh,40vw); ;
+                bottom: min(2vh,2vw); 
+                "
+                ></div>
+                <div class="circle" style="
+                height: min(30vh,30vw); 
+                width: min(30vh,30vw); 
+                background-color: #f4f3ee;
+                box-shadow: 10px 10px 10px #463f3a;
+                z-index: 999;
+                "
+                >
+                <p class="section-title">skills & classes.</p>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="text-box" style="
+                width:85vw;
+                justify-content: center;
+                flex-direction: column;
+                margin-bottom: 3vh;
+                padding-bottom: 5vh;
+            ">
+                <div class="filler"></div>
+                <div class="section-title" style="text-align:left;">Languages</div>
+                <div class="language">
+                    <div class="filler" style="
+                        background-color: #E0AFA0;
+                        left: 18vw;
+                        width: 65vw;
+                        justify-content: flex-end;
+                        align-items: center;
+                        display: flex;
+                        padding-right: 2vw;
+                    "
+                    >
+                    <div class="text-dark" style="margin-left: 2vw;">Most Familiar</div>
+                </div>
+                    <div class="text-dark" style="margin-left: 2vw;">Python</div>
+                </div>
+                <div class="language">
+                    <div class="filler" style="
+                        background-color: #E0AFA0;
+                        left: 18vw;
+                        width: 63vw;
+                        justify-content: flex-end;
+                        align-items: center;
+                        display: flex;
+                        padding-right: 2vw;
+                    "
+                    >
+                    <div class="text-dark" style="margin-left: 2vw;">Very Familiar</div>
+                </div>
+                    <div class="text-dark" style="margin-left: 2vw;">Java</div>
+                </div>
+                <div class="language">
+                    <div class="filler" style="
+                        background-color: #E0AFA0;
+                        left: 18vw;
+                        width: 63vw;
+                        justify-content: flex-end;
+                        align-items: center;
+                        display: flex;
+                        padding-right: 2vw;
+                    "
+                    >
+                    <div class="text-dark" style="margin-left: 2vw;">Very Familiar</div>
+                </div>
+                    <div class="text-dark" style="margin-left: 2vw;">JavaScript</div>
+                </div>
+                <div class="language">
+                    <div class="filler" style="
+                        background-color: #E0AFA0;
+                        left: 18vw;
+                        width: 60vw;
+                        justify-content: flex-end;
+                        align-items: center;
+                        display: flex;
+                        padding-right: 2vw;
+                    "
+                    >
+                    <div class="text-dark" style="margin-left: 2vw;">Familiar</div>
+                </div>
+                    <div class="text-dark" style="margin-left: 2vw;">Swift</div>
+                </div>
+                <div class="language">
+                    <div class="filler" style="
+                        background-color: #E0AFA0;
+                        left: 18vw;
+                        width: 60vw;
+                        justify-content: flex-end;
+                        align-items: center;
+                        display: flex;
+                        padding-right: 2vw;
+                    "
+                    >
+                    <div class="text-dark" style="margin-left: 2vw;">Familiar</div>
+                </div>
+                    <div class="text-dark" style="margin-left: 2vw;">SQL</div>
+                </div>
+                <div class="language">
+                    <div class="filler" style="
+                        background-color: #E0AFA0;
+                        left: 18vw;
+                        width: 60vw;
+                        justify-content: flex-end;
+                        align-items: center;
+                        display: flex;
+                        padding-right: 2vw;
+                    "
+                    >
+                    <div class="text-dark" style="margin-left: 2vw;">Once Very Familiar</div>
+                </div>
+                    <div class="text-dark" style="margin-left: 2vw;">C</div>
+                </div>
+                <div class="language">
+                    <div class="filler" style="
+                        background-color: #E0AFA0;
+                        left: 18vw;
+                        width: 60vw;
+                        justify-content: flex-end;
+                        align-items: center;
+                        display: flex;
+                        padding-right: 2vw;
+                    "
+                    >
+                    <div class="text-dark" style="margin-left: 2vw;">Once Familiar</div>
+                </div>
+                    <div class="text-dark" style="margin-left: 2vw;">RISC-V</div>
+                </div>
+                <div class="language">
+                    <div class="filler" style="
+                        background-color: #E0AFA0;
+                        left: 18vw;
+                        width: 60vw;
+                        justify-content: flex-end;
+                        align-items: center;
+                        display: flex;
+                        padding-right: 2vw;
+                    "
+                    >
+                    <div class="text-dark" style="margin-left: 2vw;">Once Familiar</div>
+                </div>
+                    <div class="text-dark" style="margin-left: 2vw;">Scheme</div>
+                </div>
+
+
+            </div>
+
+            <!-- Frameworks -->
+            <div class="text-box" style="
+                width:85vw;
+                justify-content: center;
+                flex-direction: column;
+                margin-bottom: 3vh;
+                padding-bottom: 5vh;
+            ">
+                <div class="filler"></div>
+                <div class="section-title" style="text-align:left;">Frameworks & Tools</div>
+                <div class="language">
+                    <div class="filler" style="
+                        background-color: #E0AFA0;
+                        left: 18vw;
+                        width: 65vw;
+                        justify-content: flex-end;
+                        align-items: center;
+                        display: flex;
+                        padding-right: 2vw;
+                    "
+                    >
+                    <div class="text-dark" style="margin-left: 2vw;">Most Familiar</div>
+                </div>
+                    <div class="text-dark" style="margin-left: 2vw;">React Native</div>
+                </div>
+                <div class="language">
+                    <div class="filler" style="
+                        background-color: #E0AFA0;
+                        left: 18vw;
+                        width: 63vw;
+                        justify-content: flex-end;
+                        align-items: center;
+                        display: flex;
+                        padding-right: 2vw;
+                    "
+                    >
+                    <div class="text-dark" style="margin-left: 2vw;">Very Familiar</div>
+                </div>
+                    <div class="text-dark" style="margin-left: 2vw;">HTML</div>
+                </div>
+                <div class="language">
+                    <div class="filler" style="
+                        background-color: #E0AFA0;
+                        left: 18vw;
+                        width: 63vw;
+                        justify-content: flex-end;
+                        align-items: center;
+                        display: flex;
+                        padding-right: 2vw;
+                    "
+                    >
+                    <div class="text-dark" style="margin-left: 2vw;">Very Familiar</div>
+                </div>
+                    <div class="text-dark" style="margin-left: 2vw;">CSS</div>
+                </div>
+                <div class="language">
+                    <div class="filler" style="
+                        background-color: #E0AFA0;
+                        left: 18vw;
+                        width: 63vw;
+                        justify-content: flex-end;
+                        align-items: center;
+                        display: flex;
+                        padding-right: 2vw;
+                    "
+                    >
+                    <div class="text-dark" style="margin-left: 2vw;">Very Familiar</div>
+                </div>
+                    <div class="text-dark" style="margin-left: 2vw;">pandas</div>
+                </div>
+                <div class="language">
+                    <div class="filler" style="
+                        background-color: #E0AFA0;
+                        left: 18vw;
+                        width: 60vw;
+                        justify-content: flex-end;
+                        align-items: center;
+                        display: flex;
+                        padding-right: 2vw;
+                    "
+                    >
+                    <div class="text-dark" style="margin-left: 2vw;">Familiar</div>
+                </div>
+                    <div class="text-dark" style="margin-left: 2vw;">UIKit</div>
+                </div>
+                <div class="language">
+                    <div class="filler" style="
+                        background-color: #E0AFA0;
+                        left: 18vw;
+                        width: 60vw;
+                        justify-content: flex-end;
+                        align-items: center;
+                        display: flex;
+                        padding-right: 2vw;
+                    "
+                    >
+                    <div class="text-dark" style="margin-left: 2vw;">Familiar</div>
+                </div>
+                    <div class="text-dark" style="margin-left: 2vw;">Firebase</div>
+                </div>
+                <div class="language">
+                    <div class="filler" style="
+                        background-color: #E0AFA0;
+                        left: 18vw;
+                        width: 60vw;
+                        justify-content: flex-end;
+                        align-items: center;
+                        display: flex;
+                        padding-right: 2vw;
+                    "
+                    >
+                    <div class="text-dark" style="margin-left: 2vw;">Familiar</div>
+                </div>
+                    <div class="text-dark" style="margin-left: 2vw;">Figma</div>
+                </div>
+                <div class="language">
+                    <div class="filler" style="
+                        background-color: #E0AFA0;
+                        left: 18vw;
+                        width: 60vw;
+                        justify-content: flex-end;
+                        align-items: center;
+                        display: flex;
+                        padding-right: 2vw;
+                    "
+                    >
+                    <div class="text-dark" style="margin-left: 2vw;">Familiar</div>
+                </div>
+                    <div class="text-dark" style="margin-left: 2vw;">Excel</div>
+                </div>
+                <div class="language">
+                    <div class="filler" style="
+                        background-color: #E0AFA0;
+                        left: 18vw;
+                        width: 60vw;
+                        justify-content: flex-end;
+                        align-items: center;
+                        display: flex;
+                        padding-right: 2vw;
+                    "
+                    >
+                    <div class="text-dark" style="margin-left: 2vw;">Familiar</div>
+                </div>
+                    <div class="text-dark" style="margin-left: 2vw;">scikit-learn</div>
+                </div>
+                <div class="language">
+                    <div class="filler" style="
+                        background-color: #E0AFA0;
+                        left: 18vw;
+                        width: 55vw;
+                        justify-content: flex-end;
+                        align-items: center;
+                        display: flex;
+                        padding-right: 2vw;
+                    "
+                    >
+                    <div class="text-dark" style="margin-left: 2vw;">Once Very Familiar</div>
+                </div>
+                    <div class="text-dark" style="margin-left: 2vw;">Selenium</div>
+                </div>
+
+
+            </div>
+
+            <!-- Classes -->
+            <div class="text-box" style="
+                width:85vw;
+                justify-content: center;
+                flex-direction: column;
+                margin-bottom: 3vh;
+                padding-bottom: 5vh;
+            ">
+                <div class="filler"></div>
+                <div class="section-title" style="text-align:left;">Classes</div>
+                <div class="language"
+                    style="width: 80vw; height: auto; padding-top: 1vw; padding-bottom: 1vw; flex-direction: column; 
+                    align-self:center; align-items: flex-start;"
+                    >
+                    <div class="filler" style="
+                        background-color: #E0AFA0;
+                    "
+                    ></div>
+
+                    <div class="section-title" style="margin-left: 2vw;">Freshman Year.</div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        CS 61B: Data Structures
+                    </div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        CS 61A: The Structure and Interpretation of Computer Programs
+                    </div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        EECS 16B: Designing Information Devices and Systems II
+                    </div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        MATH 54: Linear Algebra and Differential Equations
+                    </div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        KOREAN 10A: Intermediate Korean
+                    </div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        PS 1: Introduction to American Politics
+                    </div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        GEOG 70AC: The Urban Experience
+                    </div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        FILM R1A: The Craft of Writing - Film Focus
+                    </div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        PLANTBI 40: The (Secret) Life of Plants
+                    </div>
+
+
+                </div>
+                <div class="language"
+                    style="width: 80vw; height: auto; padding-top: 1vw; padding-bottom: 1vw; flex-direction: column; 
+                    align-self:center; align-items: flex-start;"
+                    >
+                    <div class="filler" style="
+                        background-color: #E0AFA0;
+                    "
+                    ></div>
+
+                    <div class="section-title" style="margin-left: 2vw;">Sophomore Year.</div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        CS 170: Efficient Algorithms and Intractable Problems
+                    </div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        CS 188: Introduction to Artificial Intelligence
+                    </div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        CS 70: Discrete Mathematics and Probability Theory
+                    </div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        CS 61C: Great Ideas of Computer Architechture (Machine Structures)
+                    </div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        DATA 100: Principles & Techniques of Data Science
+                    </div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        DATA 198: Directed Group Studies for Advanced Undergraduates
+                    </div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        DATA C8: Foundations of Data Science
+                    </div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        PHILO 3: The Nature of Mind
+                    </div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        SLAVIC R5B: Reading and Composition
+                    </div>
+
+
+                </div>
+                <div class="language"
+                    style="width: 80vw; height: auto; padding-top: 1vw; padding-bottom: 1vw; flex-direction: column; 
+                    align-self:center; align-items: flex-start;"
+                    >
+                    <div class="filler" style="
+                        background-color: #E0AFA0;
+                    "
+                    ></div>
+
+                    <div class="section-title" style="margin-left: 2vw;">Junior Year (Upcoming).</div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        CS 189: Introduction to Machine Learning
+                    </div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        CS 186: Introduction to Database Systems
+                    </div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        CS 197: Field Study
+                    </div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        STAT 33B: Introduction to Advanced Programming in R
+                    </div>
+                    <div class="text-dark" style="margin-left: 5vw; padding: 2vw; padding-bottom: 0;">
+                        MATH 1B: Calculus
+                    </div>
+                </div>
+
+            </div>
+
+                
+            </div>
+
+
         </div>
-      </div>
 
-      <!-- work section -->
-      <div class="section" id="projects">
-        <div class="flip-card-container">
-          <div class="flip-card">
-            <div class="flip-card-front">
-              <p class="section_title" style="text-align: center; margin:0; padding:0;">Personal Website</p>
-              <p class="section_text" style="text-align: center; margin:0; padding:0;"> July 2022 - Present</p>
-            </div>
-            <div class="flip-card-back">
-              <p class="section_text" style="margin:0; color: #E0AFA0; align-self: center; text-align: center;">
-                Web Developer
-              </p>
-              <p class="section_text" style="margin:0;  color: #F4F3EE;">
-                Built a portfolio website hosted on GitHub Pages with a Studio Ghibli theme displaying more information about my work and personal apsirations
-              </p>
-              <p class="section_text" style="margin:0;  color: #F4F3EE;">
-                Incorporated animations such as a customized cursor and rotating card elements
-              </p>
-              <p class="section_text" style="margin:0; color: #F4F3EE;">
-                Implemented a parallax interface where the background remains still while other elements scroll by
-              </p>
-              <p class="section_text" style="margin:0; color: #F4F3EE;">
-                Created horizontal swiping navigation interface to achieve a smoother browsing experience reminiscent of flipping the actual pages of a portfolio booklet
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card-container">
-          <div class="flip-card">
-            <div class="flip-card-front">
-              <p class="section_title" style="text-align: center; margin:0; padding:0;">BlackRock</p>
-              <p class="section_text" style="text-align: center; margin:0; padding:0;">May 2022 - Present</p>
-            </div>
-            <div class="flip-card-back">
-              <p class="section_text" style="margin:0; color: #E0AFA0; align-self: center; text-align: center;">
-                Software Engineering & Product Management Intern
-              </p>
-              <p class="section_text" style="margin:0;  color: #F4F3EE;">
-                Mapped user journey and conducted competitive landscape research for mobile application
-              </p>
-              <p class="section_text" style="margin:0;  color: #F4F3EE;">
-                Proposed, designed on Figma and developed new feature for internal mobile application using React Native
-              </p>
-              <p class="section_text" style="margin:0; color: #F4F3EE;">
-                Implemented frontend updates to 4 screens and integrated internal APIs into another internal mobile application
-              </p>
-              <p class="section_text" style="margin:0; color: #F4F3EE;">
-                Completed 3 full-stack mobile applications supported by both iOS and Androi during training using React Native, REST APIs and Cloud Firestore
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card-container">
-          <div class="flip-card">
-            <div class="flip-card-front">
-              <p class="section_title" style="text-align: center; margin:0; padding:0;">Mobile Developers at Berkeley</p>
-              <p class="section_text" style="text-align: center; margin:0; padding:0;">August 2021 - Present</p>
-            </div>
-            <div class="flip-card-back">
-              <p class="section_text" style="margin:0; color: #E0AFA0; align-self: center; text-align: center;">
-                iOS App Developer
-              </p>
-              <p class="section_text" style="margin:0;  color: #F4F3EE;">
-                Incorporated In-App Purchases using Apples's In-App Purchase API as well as Apple Pay and traditional credit card payments for non-digital services using the Stripe API 
-              </p>
-              <p class="section_text" style="margin:0;  color: #F4F3EE;">
-                Updated existing user interface with Figma designs from client's product team
-              </p>
-              <p class="section_text" style="margin:0; color: #F4F3EE;">
-                Built 3 iOS full-stack mobile applications in the training program using Auto Layout in Swift and UIKit for frontend development and incorporated Firebase Authentication and Cloud Firestore for backend storage and integration
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card-container">
-          <div class="flip-card">
-            <div class="flip-card-front">
-              <p class="section_title" style="text-align: center; margin:0; padding:0;">Data Science Society</p>
-              <p class="section_text" style="text-align: center; margin:0; padding:0;">August 2020 - Present</p>
-            </div>
-            <div class="flip-card-back">
-              <p class="section_text" style="margin:0; color: #E0AFA0; align-self: center; text-align: center;">
-                Vice President of Marketing, Director of Academic Development Committee
-              </p>
-              <p class="section_text" style="margin:0;  color: #F4F3EE;">
-                Revamped organizational branding and marketing materials including its consulting booklet introducing its services to clients and recruitment social media posts
-              </p>
-              <p class="section_text" style="margin:0;  color: #F4F3EE;">
-                Mentored 4 teams of undergraduate students in machine learning and data visualization projects and trained them in the usage of pandas, scikit-learn, Matplotlib and Seaborn
-              </p>
-              <p class="section_text" style="margin:0; color: #F4F3EE;">
-                Directed a programming workshop for over 80 middle school students together with the Society of Women Engineers
-              </p>
-              <p class="section_text" style="margin:0; color: #F4F3EE;">
-                Wrote an article "Personality in Four Letters or Less" on a personal group data science project featuring the entire life cycle from data cleaning using pandas, visualizations using Seaborn, a Random Forest Classifer to predict MBTI types of users based on their online activity with over 90% accuracy in each category using scikit-learn
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card-container">
-          <div class="flip-card">
-            <div class="flip-card-front">
-              <p class="section_title" style="text-align: center; margin:0; padding:0;">Enterprise Singapore</p>
-              <p class="section_text" style="text-align: center; margin:0; padding:0;">May 2020 - August 2020</p>
-            </div>
-            <div class="flip-card-back">
-              <p class="section_text" style="margin:0; color: #E0AFA0; align-self: center; text-align: center;">
-                Info-comm, Media & Digitalization Intern
-              </p>
-              <p class="section_text" style="margin:0;  color: #F4F3EE;">
-                Reduced compilation time of a database with 15,000+ companies by 30% through building a web-scraping program extractin information from LinkedIn and other websites using SQL, Selenium and Beautiful Soup
-              </p>
-              <p class="section_text" style="margin:0;  color: #F4F3EE;">
-                Presented about fundamental quantum physics concepts such as Superposition and Entanglement, potential applications, state of technology and current gaps in existing initiatives to develop the local Quantum Computing ecosystem
-              </p>
-              <p class="section_text" style="margin:0; color: #F4F3EE;">
-                Consulted 12 rising Artificial Intelligence start-ups to discuss business recovery strategies
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- pawprint div -->
-      <div class="transition">
-        <img class="pawprints" src="./images/pawprints.png" id="p1" style="margin-right:0vw">
-        <img class="pawprints" src="./images/pawprints.png" id="p2" style="margin-right:20vw">
-        <img class="pawprints" src="./images/pawprints.png" id="p3" style="margin-right:35vw">
-      </div>
 
-      <!-- section divider -->
-      <div id="wrapper_bubbles">
-        <div class="circle" id="small_deco"></div>
-        <div class="circle" id="smaller_deco"></div>
-        <div class="circle" id="section_head">
-          <h1 class="section_title">classes & skills.</h1>
-        </div>
-      </div>
-
-      <!-- my projects section -->
-      <div class="section" id="about me">
-        <div id="flex-view">
-          <div class="sect">
-            <div id="box_filler"></div>
-            <p class="section_title" style="text-align:left; padding: 0; margin-top: 5%; margin-bottom: 4vh;"> Languages. </p>
-            <div class="language" style="margin-bottom: 2vh;">
-              <p class="section_text" style="padding: 0;">Python</p>
-              <div class="bar" style="width: 87%">
-                <p class="section_text">Most Familiar</p>
-              </div>
-            </div>
-            <div class="language" style="margin-bottom: 2vh;">
-              <p class="section_text" style="padding: 0;">Java</p>
-              <div class="bar" style="width: 82%">
-                <p class="section_text">Very Familiar</p>
-              </div>
-            </div>
-            <div class="language" style="margin-bottom: 2vh;">
-              <p class="section_text" style="padding: 0;">JavaScript</p>
-              <div class="bar" style="width: 82%">
-                <p class="section_text">Very Familiar</p>
-              </div>
-            </div>
-            <div class="language" style="margin-bottom: 2vh;">
-              <p class="section_text" style="padding: 0;">Swift</p>
-              <div class="bar" style="width: 70%">
-                <p class="section_text">Familiar</p>
-              </div>
-            </div>
-            <div class="language" style="margin-bottom: 2vh;">
-              <p class="section_text" style="padding: 0;">SQL</p>
-              <div class="bar" style="width: 70%">
-                <p class="section_text">Familiar</p>
-              </div>
-            </div>
-            <div class="language" style="margin-bottom: 2vh;">
-              <p class="section_text" style="padding: 0;">C</p>
-              <div class="bar" style="width: 55%">
-                <p class="section_text">Once Very Familiar</p>
-              </div>
-            </div>
-            <div class="language" style="margin-bottom: 2vh;">
-              <p class="section_text" style="padding: 0;">RISC-V</p>
-              <div class="bar" style="width: 50%">
-                <p class="section_text">Once Familiar</p>
-              </div>
-            </div>
-            <div class="language" style="margin-bottom: 2vh;">
-              <p class="section_text" style="padding: 0;">Scheme</p>
-              <div class="bar" style="width: 50%">
-                <p class="section_text">Once Familiar</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="sect">
-            <div id="box_filler"></div>
-            <p class="section_title" style="text-align:left; padding: 0; margin-top: 5%; margin-bottom: 4vh;"> Frameworks & Tools. </p>
-            <div class="language" style="margin-bottom: 2vh;">
-              <p class="section_text" style="padding: 0;">React Native</p>
-              <div class="bar" style="width: 87%">
-                <p class="section_text">Most Familiar</p>
-              </div>
-            </div>
-            <div class="language" style="margin-bottom: 2vh;">
-              <p class="section_text" style="padding: 0;">HTML</p>
-              <div class="bar" style="width: 82%">
-                <p class="section_text">Very Familiar</p>
-              </div>
-            </div>
-            <div class="language" style="margin-bottom: 2vh;">
-              <p class="section_text" style="padding: 0;">CSS</p>
-              <div class="bar" style="width: 82%">
-                <p class="section_text">Very Familiar</p>
-              </div>
-            </div>
-            <div class="language" style="margin-bottom: 2vh;">
-              <p class="section_text" style="padding: 0;">pandas</p>
-              <div class="bar" style="width: 82%">
-                <p class="section_text">Very Familiar</p>
-              </div>
-            </div>
-            <div class="language" style="margin-bottom: 2vh;">
-              <p class="section_text" style="padding: 0;">UIKit</p>
-              <div class="bar" style="width: 70%">
-                <p class="section_text">Familiar</p>
-              </div>
-            </div>
-            <div class="language" style="margin-bottom: 2vh;">
-              <p class="section_text" style="padding: 0;">Firebase</p>
-              <div class="bar" style="width: 70%">
-                <p class="section_text">Familiar</p>
-              </div>
-            </div>
-            <div class="language" style="margin-bottom: 2vh;">
-              <p class="section_text" style="padding: 0;">Figma</p>
-              <div class="bar" style="width: 70%">
-                <p class="section_text">Familiar</p>
-              </div>
-            </div>
-            <div class="language" style="margin-bottom: 2vh;">
-              <p class="section_text" style="padding: 0;">Excel</p>
-              <div class="bar" style="width: 70%">
-                <p class="section_text">Familiar</p>
-              </div>
-            </div>
-            <div class="language" style="margin-bottom: 2vh;">
-              <p class="section_text" style="padding: 0;">scikit-learn</p>
-              <div class="bar" style="width: 70%">
-                <p class="section_text">Familiar</p>
-              </div>
-            </div>
-            <div class="language" style="margin-bottom: 5%;">
-              <p class="section_text" style="padding: 0;">Selenium</p>
-              <div class="bar" style="width: 50%">
-                <p class="section_text">Once Very Familiar</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="sect">
-            <div id="box_filler"></div>
-            <p class="section_title" style="text-align:left; padding: 0; margin-top: 5%; margin-bottom: 4vh;"> Classes. </p>
-            <div class="year">
-              <p class="section_title" style="text-align:left; padding: 2vw; "> Freshman Year. </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                CS 61B: Data Structures
-              </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                CS 61A: The Structure and Interpretation of Computer Programs
-              </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                EECS 16B: Designing Information Devices and Systems II
-              </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                MATH 54: Linear Algebra and Differential Equations
-              </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                KOREAN 10A: Intermediate Korean
-              </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                PS 1: Introduction to American Politics
-              </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                GEOG 70AC: The Urban Experience
-              </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                FILM R1A: The Craft of Writing - Film Focus
-              </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                PLANTBI 40: The (Secret) Life of Plants
-              </p>
-            </div>
-            <div class="year">
-              <p class="section_title" style="text-align:left; padding: 2vw; "> Sophomore Year. </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                CS 170: Efficient Algorithms and Intractable Problems
-              </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                CS 188: Introduction to Artificial Intelligence
-              </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                CS 70: Discrete Mathematics and Probability Theory
-              </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                CS 61C: Great Ideas of Computer Architechture (Machine Structures)
-              </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                DATA 100: Principles & Techniques of Data Science
-              </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                DATA 198: Directed Group Studies for Advanced Undergraduates
-              </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                DATA C8: Foundations of Data Science
-              </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                PHILO 3: The Nature of Mind
-              </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                SLAVIC R5B: Reading and Composition
-              </p>
-            </div>
-            <div class="year">
-              <p class="section_title" style="text-align:left; padding: 2vw; "> Junior Year (Upcoming). </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                CS 189: Introduction to Machine Learning
-              </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                CS 186: Introduction to Database Systems
-              </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                CS 197: Field Study
-              </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                STAT 33B: Introduction to Advanced Programming in R
-              </p>
-              <p class="section_text" style="text-align:left; margin: 0; padding: 0; margin-left: 8%; margin-right: 2%; margin-bottom: 2vw;"> 
-                MATH 1B: Calculus
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    <img src="images/dumpling.png" alt="trailing dumpling" id="cursor0">
-    <img src="images/dumpling.png" alt="trailing dumpling1" id="cursor1">
-    <img src="images/dumpling.png" alt="trailing dumpling2" id="cursor2"> 
-    <script>
-      var cursor0 = document.getElementById("cursor0");
-      var cursor1 = document.getElementById("cursor1");
-      var cursor2 = document.getElementById("cursor2");
-      document.onmousemove= function(e) {
-          cursor0.style.left = (e.pageX+15) + "px";
-          cursor0.style.top = (e.pageY+15) + "px";
-          cursor1.style.left = (e.pageX+30) + "px";
-          cursor1.style.top = (e.pageY+15) + "px";
-          cursor2.style.left = (e.pageX+45) + "px";
-          cursor2.style.top = (e.pageY+15) + "px";
-          cursor0.style.display="block";
-          cursor1.style.display="block";
-          cursor2.style.display="block";
-      };
-      document.onscroll = function () {
-          cursor0.style.display="none";
-          cursor1.style.display="none";
-          cursor2.style.display="none";
-      }
-    </script>
-  </body>
-
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="final.js"></script>
+</body>
 </html>
