@@ -5,6 +5,7 @@
 body {
     margin:0;
     padding: 0;
+    cursor: url(images/noodles.png), auto;
 }
 .pages {
     display: flex;
@@ -246,3 +247,21 @@ body {
     align-items: center;
     justify-content: flex-start;
 }
+
+#cursor0 {
+    position: absolute;
+    display: none;
+    z-index: 10000;
+  }
+  
+  #cursor1 {
+    position: absolute;
+    display: none;
+    z-index: 10000;
+  }
+  
+  #cursor2 {
+    position: absolute;
+    display: none;
+    z-index: 10000;
+  }
