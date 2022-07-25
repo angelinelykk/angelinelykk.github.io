@@ -16,8 +16,7 @@ body {
 .page {
     min-height: 100vh;
     display: flex;
-    width: 91;
-    min-height: 100vh;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
