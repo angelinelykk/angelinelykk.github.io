@@ -5,7 +5,7 @@
 body {
     margin:0;
     padding: 0;
-    cursor: url(images/noodles.png), auto;
+    cursor: url(src/noodles.png), auto;
 }
 .pages {
     display: flex;
@@ -23,22 +23,22 @@ body {
 }
 #p1 {
     width: 91vw;
-    background-image: url("images/background.jpeg");
+    background-image: url("src/background.jpeg");
 }
 
 #p2 {
     width: 3vw;
-    background-image: url("images/marnie021.jpeg");
+    background-image: url("src/marnie021.jpeg");
 }
 
 #p3 {
     width: 3vw;
-    background-image: url("images/chihiro042.jpeg");
+    background-image: url("src/chihiro042.jpeg");
 }
 
 #p4 {
     width: 3vw;
-    background-image: url("images/marnie050.jpeg");
+    background-image: url("src/marnie050.jpeg");
 }
 #b1 {
     display:none;
@@ -85,7 +85,6 @@ body {
     position: absolute;
     height: min(6vh, 6vw);
     width: 40vw;
-    bottom: 2vh;
     right: 2vw;
     display: flex;
 }
